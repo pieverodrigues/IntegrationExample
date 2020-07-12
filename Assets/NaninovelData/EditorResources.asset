@@ -114,9 +114,6 @@ MonoBehaviour:
     - Name: ConfirmationUI
       PathPrefix: UI
       Guid: 88d03f19bcbff914ba33a7c9895e2d7c
-    - Name: ContinueInputUI
-      PathPrefix: UI
-      Guid: 1add671f8348e8443bcc56290e82fc5e
     - Name: ExternalScriptsUI
       PathPrefix: UI
       Guid: 671ceb4f549ddf046913d7debf113469

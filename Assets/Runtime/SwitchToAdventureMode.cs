@@ -1,6 +1,5 @@
 ﻿using Naninovel;
 using Naninovel.Commands;
-using UniRx.Async;
 using UnityCommon;
 using UnityEngine;
 
@@ -10,7 +9,7 @@ public class SwitchToAdventureMode : Command
     [ParameterAlias("reset")]
     public BooleanParameter ResetState = true;
 
-    public override async UniTask ExecuteAsync (CancellationToken cancellationToken = default)
+    public override async UniTask ExecuteAsync (AsyncToken asyncToken = default)
     {
         // 1. Disable Naninovel input.
         var inputManager = Engine.GetService<IInputManager>();
@@ -22,7 +21,7 @@ public class SwitchToAdventureMode : Command
 
         // 3. Hide text printer.
         var hidePrinter = new HidePrinter();
-        hidePrinter.ExecuteAsync(cancellationToken).Forget();
+        hidePrinter.ExecuteAsync(asyncToken).Forget();
 
         // 4. Reset state (if required).
         if (ResetState)

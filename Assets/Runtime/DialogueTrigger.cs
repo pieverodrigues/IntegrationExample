@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityCommon;
 using Naninovel;
-using UniRx.Async;
 
 public class DialogueTrigger : MonoBehaviour
 {

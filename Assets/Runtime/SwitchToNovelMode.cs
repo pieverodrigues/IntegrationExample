@@ -1,6 +1,4 @@
 ﻿using Naninovel;
-using Naninovel.Commands;
-using UniRx.Async;
 using UnityCommon;
 using UnityEngine;
 
@@ -10,7 +8,7 @@ public class SwitchToNovelMode : Command
     public StringParameter ScriptName;
     public StringParameter Label;
 
-    public override async UniTask ExecuteAsync (CancellationToken cancellationToken = default)
+    public override async UniTask ExecuteAsync (AsyncToken asyncToken = default)
     {
         // 1. Disable character control.
         var controller = Object.FindObjectOfType<CharacterController3D>();

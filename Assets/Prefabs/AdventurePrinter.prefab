@@ -51,7 +51,7 @@ Canvas:
   m_GameObject: {fileID: 1216038347459006}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -89,6 +89,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hideOnLoad: 1
+  hideInThumbnail: 0
   saveVisibilityState: 1
   blockInputWhenVisible: 0
   allowedSamplers: []
@@ -97,17 +98,24 @@ MonoBehaviour:
   content: {fileID: 7466899038394840338}
   continueInputTriggers:
   - {fileID: 1560104929271160}
+  onTintChanged:
+    m_PersistentCalls:
+      m_Calls: []
   authorNamePanel: {fileID: 6695179159936184171}
   authorAvatarImage: {fileID: 4031540365962271738}
   inputIndicator: {fileID: 114522303404012452, guid: b9b3fefeea6c9f74ca0e1a2f9e4dfb13,
     type: 3}
   positionIndicatorOverText: 1
   appearances: []
-  revealSfx: 
-  clipRevealSfx: 1
   charsSfx: []
   charsCommands: []
   onAuthorChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onRevealStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onRevealFinished:
     m_PersistentCalls:
       m_Calls: []
 --- !u!225 &225261487971049352
@@ -304,6 +312,7 @@ MonoBehaviour:
   revealFadeWidth: 100
   slideClipRect: 1
   italicSlantAngle: 10
+  drawClipRects: 0
 --- !u!114 &245865972693072711
 MonoBehaviour:
   m_ObjectHideFlags: 0
